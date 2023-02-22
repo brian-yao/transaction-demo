@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { userApi } from "./userApi";
+import { transactionApi } from "../utils/userApi";
 
-const useUsers = () => {
+const useTransactions = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [isError, setError] = useState(false);
 
-	const getUsers = async () => {
+	const getTransactions = async () => {
 		try {
 			setIsLoading(true);
-			return await userApi();
+			return await transactionApi();
 		} catch (err) {
 			console.log(err);
 			setError(true);
@@ -17,7 +17,7 @@ const useUsers = () => {
 		}
 	};
 
-	return [getUsers, isLoading, isError];
+	return [getTransactions, isLoading, isError];
 };
 
-export default useUsers;
+export default useTransactions;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import useUsers from "./useUsers";
+import useUsers from "./hooks/useUsers";
+import { Link } from "react-router-dom";
 
 function App() {
 	const [users, setUsers] = useState([]);
@@ -9,9 +10,9 @@ function App() {
 
 	const calculatePointTotal = (points) => {
 		// 10, 120, 200
-		let twopts = points > 100 ? (points - 100) * 2 : 0;
-		let onept = points > 50 ? (100 - (points % 100)) * 1 : 0;
-		const total = twopts + onept;
+		let twoPt = points > 100 ? (points - 100) * 2 : 0;
+		let onePt = points > 50 ? (100 - (points % 100)) * 1 : 0;
+		const total = twoPt + onePt;
 		return total;
 	};
 
@@ -29,9 +30,11 @@ function App() {
 				<h1>Users</h1>
 				{isLoading && "loading"}
 				<ul>
-					{users.map((user, id) => (
-						<li key={id}>
-							<p>{user.name}</p>
+					{users.map((user) => (
+						<li key={user.id}>
+							<Link to={`user/${user.id}`} state={{ name: "hello" }}>
+								{user.name}
+							</Link>
 							<span>Total Points = {calculatePointTotal(user.totalSpent)}</span>
 						</li>
 					))}

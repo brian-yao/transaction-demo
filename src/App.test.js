@@ -1,9 +1,9 @@
 import { act, renderHook } from "@testing-library/react";
 // import App from "./App";
-import useUsers from "./useUsers";
-import { userApi } from "./userApi";
+import useUsers from "./hooks/useUsers";
+import { userApi } from "./utils/userApi";
 
-jest.mock("./userApi");
+jest.mock("./utils/userApi");
 
 describe("useUsers", () => {
 	it("result", async () => {

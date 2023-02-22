@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Brian",
+		"customerID": 1,
+		"transactionID": 4584,
+		"date": "02-07-2023",
+		"category": "Electronics",
+		"itemName": "iPhone 11",
+		"price": 800
+	},
+	{
+		"name": "Brian",
+		"customerID": 1,
+		"transactionID": 4585,
+		"date": "02-07-2023",
+		"category": "Electronics",
+		"itemName": "Apple Watch",
+		"price": 320
+	},
+	{
+		"name": "Brian",
+		"customerID": 1,
+		"transactionID": 4586,
+		"date": "02-07-2023",
+		"category": "Electronics",
+		"itemName": "PlayStation 5",
+		"price": 200
+	},
+	{
+		"name": "Paul",
+		"customerID": 2,
+		"transactionID": 123,
+		"date": "02-07-2023",
+		"category": "Food",
+		"itemName": "Apple",
+		"price": 5
+	},
+	{
+		"name": "Paul",
+		"customerID": 2,
+		"transactionID": 124,
+		"date": "02-07-2023",
+		"category": "Food",
+		"itemName": "Banana",
+		"price": 3
+	},
+	{
+		"name": "John",
+		"customerID": 3,
+		"transactionID": 1000,
+		"date": "02-07-2023",
+		"category": "Office Supplies",
+		"itemName": "Printer",
+		"price": 60
+	},
+	{
+		"name": "John",
+		"customerID": 3,
+		"transactionID": 1001,
+		"date": "02-07-2023",
+		"category": "Office Supplies",
+		"itemName": "Chair",
+		"price": 60
+	}
+]
